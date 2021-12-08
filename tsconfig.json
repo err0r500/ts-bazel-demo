@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": ["esnext"],
+    "composite": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@libs/*": ["./src/libs/*"],
+      "*": [
+        "bazel-demo/external/npm/_/node_modules/*",
+        "bazel-demo/external/npm/_/node_modules/@types/*"
+      ]
+    }
+  }
+}
